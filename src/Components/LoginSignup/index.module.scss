@@ -1,0 +1,95 @@
+
+.container{
+		width: 350px;
+		min-height: 400px;
+		margin: auto;
+		margin-top: 100px;
+		background-color: #fff;
+		border-radius: 8px;
+		padding: 10px;
+		.title{
+			height: 40px;
+			font-size: 30px;
+			font-weight: 700;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		.flex{
+			display: flex;
+			justify-content: space-between;
+			border: 1px solid rgb(165, 165, 165);
+			border-radius: 8px;
+			.button{
+				width: 50%;
+				height: 40px;
+				background: transparent;
+				border:transparent ;
+				border-radius: 8px;
+				font-size: 16px;
+				font-weight: 700;
+				transition: all 1s ease;
+				&.active{
+					background: -webkit-linear-gradient(left,#003366,#004080,#0059b3
+					, #0073e6);
+					color: #fff;
+					cursor: pointer;
+					transition: all 0.5s ease;
+				}
+			}
+			
+		}
+		.data_container{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			margin-top: 10px;
+			input{
+				height: 50px;
+				width: 100%;
+				outline: none;
+				padding-left: 15px;
+				border-radius: 15px;
+				border: 1px solid lightgrey;
+				border-bottom-width: 2px;
+				font-size: 17px;
+				transition: all 0.3s ease;
+				margin-top: 10px;
+				margin-bottom: 5px;
+				&:focus{
+					border-color: #1a75ff;
+				}
+				&:focus::placeholder{
+					color: #1a75ff;
+				}
+			}
+		}
+		.loginSignUp{
+			width: 100%;
+			font-size: 20px;
+			font-weight: 700;
+			height: 50px;
+			margin-top: 40px;
+			color: #fff;
+			border-radius: 8px;
+			border: transparent;
+			background: -webkit-linear-gradient(left,#003366,#004080,#0059b3
+					, #0073e6);
+			&:hover{
+				background: -webkit-linear-gradient(right,#003366,#004080,#0059b3
+				, #0073e6);
+			}
+		}
+		.bottom_text{
+			text-align: center;
+			font-size: 17px;
+			font-weight: 500;
+			margin-top: 20px;
+			a{
+				color: #1a75ff;
+  				text-decoration: none;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+}
